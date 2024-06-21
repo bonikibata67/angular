@@ -1,0 +1,11 @@
+<p>speeningwheel works!</p>
+<div class="spinning-wheel">
+    <button (click)="spin()">Spin the Wheel!</button>
+    <div *ngIf="result">
+      <p>{{ spinMessage }}</p>
+      <div *ngIf="result === 'Try Again'">
+        <button (click)="spin()">Spin Again!</button>
+      </div>
+    </div>
+  </div>
+  

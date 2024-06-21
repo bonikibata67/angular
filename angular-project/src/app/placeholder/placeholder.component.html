@@ -1,0 +1,7 @@
+<div class="placeholder-container">
+    <input [(ngModel)]="userInput" placeholder="input..." />
+    <p [ngStyle]="{'color': userInput.length < minLength ? 'red' : 'black'}">
+      {{ userInput | placeholder:'Input is too short or empty':minLength }}
+    </p>
+  </div>
+  

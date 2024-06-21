@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { message } from '../../Models/message';
 import { CommonModule } from '@angular/common';
 
@@ -11,6 +11,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './message.component.css'
 })
 export class MessageComponent {
-  @input() messages:message[]=[]
+  @Input() messages:message[]=[]
 
 }
